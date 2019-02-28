@@ -4,6 +4,12 @@ patch:
     - schema: luna_pinyin_simp
   switcher/hotkeys:
     - F4
+  switcher/save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    - zh_hans
+    - emoji_suggestion
   menu/page_size: 3
   ascii_composer:
     good_old_caps_lock: false

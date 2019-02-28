@@ -1,11 +1,11 @@
 patch:
   schema/dependencies: {}
+  schema/name: "小鹤双拼"
   switches:
     - name: ascii_mode
       reset: 0
       states: [ 中文, 西文 ]
     - name: emoji_suggestion
-      reset: 1
       states: [ "Yes", "No" ]
     - name: full_shape
       states: [ 半角, 全角 ]
@@ -47,14 +47,22 @@ patch:
       '\': ["、", '\']
       "'": {pair: ["「", "」"]}
       "\"": "\""
-      "[": ["[", "【"]
-      "]": ["]", "】"]
-      "{": ["{", "〖", "『"]
-      "}": ["}", "〗", "』"]
+      "[": "["
+      "]": "]"
+      # "[": ["[", "【"]
+      # "]": ["]", "】"]
+      "{": "{"
+      "}": "}"
+      # "{": ["{", "〖", "『"]
+      # "}": ["}", "〗", "』"]
       _: ["——", "_"]
       "|": "|"
-      "(": ["（", "("]
-      ")": ["）", ")"]
+      "(": ["(", "（"]
+      ")": [")", "）"]
+      ":": [":", "："]
+      ";": [";", "；"]
+      "?": ["?", "？"]
+      "!": ["!", "！"]
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["<", "《", ",", "〈", "«"]
       ">": [">", "》", ".", "〉", "»"]
@@ -63,12 +71,13 @@ patch:
     patterns:
       punct: "^/([a-z]+|[0-9]0?)$"
       html: "^<[a-z]+>$"
-      code: "[a-zA-Z]+(*$"
-      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]{1,10}[.:_-].*$"
+      camel: "[a-z]+[A-Z].*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]{1,11}[.:_-].*$"
 
   ### 精简 simp
-  "translator/dictionary": pinyin_simp
-  "translator/preedit_format": {}
+  translator/dictionary: pinyin_simp
+  translator/preedit_format: {}
+  # translator/enable_correction: true
 
   ### 双拼使用自定义词典 custom_phrase.txt
   custom_phrase:

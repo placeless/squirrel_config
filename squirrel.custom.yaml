@@ -32,3 +32,7 @@ patch:
   "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": true
   "com.sublimetext.3/ascii_mode": true
   "com.apple.Finder/ascii_mode": true
+  "com.calibre-ebook.ebook-viewer/ascii_mode": true
+  "com.calibre-ebook.ebook-edit/ascii_mode": true
+  "net.kovidgoyal.calibre/ascii_mode": true
+  "com.reederapp.rkit2.mac/ascii_mode": true
