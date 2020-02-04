@@ -1,7 +1,7 @@
 patch:
   schema_list:
     - schema: double_pinyin_flypy
-    - schema: luna_pinyin_simp
+    - schema: luna_pinyin
   switcher/hotkeys:
     - F4
   switcher/save_options:
