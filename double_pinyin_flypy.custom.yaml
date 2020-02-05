@@ -9,7 +9,8 @@ patch:
       states: [ "👌", "No" ]
     - name: full_shape
       states: [ 半角, 全角 ]
-    - name: zh_simp
+    - name: simplification
+      reset: 1
       states: [ 漢字, 汉字 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
@@ -27,7 +28,7 @@ patch:
     - script_translator
   engine/filters:
     - simplifier@emoji_suggestion
-    - simplifier@zh_simp
+    - simplifier
     - uniquifier
     # - charset_filter@gbk
     - single_char_filter
