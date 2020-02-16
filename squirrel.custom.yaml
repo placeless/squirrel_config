@@ -15,7 +15,7 @@ patch:
       border_height: 6
       border_width: 12
       border_color_width: 0
-      font_face: "SourceHanSerifCN-Regular,HanaMinB"
+      font_face: PingFangSC
       font_point: 17
       label_font_point: 12
       text_color: 0xffffff

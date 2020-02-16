@@ -8,8 +8,8 @@ patch:
     - full_shape
     - ascii_punct
     - simplification
-    - zh_hans
-    - emoji_suggestion
+    # - zh_hans
+    # - emoji_suggestion
   menu/page_size: 3
   ascii_composer:
     good_old_caps_lock: false

@@ -1,12 +1,13 @@
 patch:
-  schema/dependencies: emoji
+  # schema/dependencies: emoji
+  schema/dependencies: {}
   schema/name: "小鹤双拼"
   switches:
     - name: ascii_mode
       reset: 0
       states: [ 中文, 西文 ]
-    - name: emoji_suggestion
-      states: [ "👌", "No" ]
+    # - name: emoji_suggestion
+    #   states: [ "👌", "No" ]
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: simplification
@@ -27,14 +28,14 @@ patch:
     - punct_translator
     - script_translator
   engine/filters:
-    - simplifier@emoji_suggestion
+    # - simplifier@emoji_suggestion
     - simplifier
     - uniquifier
-    # - charset_filter@gbk
-    - single_char_filter
-  emoji_suggestion:
-    opencc_config: emoji.json
-    option_name: emoji_suggestion
+    # - charset_filter
+    # - single_char_filter # 单字提前
+  # emoji_suggestion:
+  #   opencc_config: emoji.json
+  #   option_name: emoji_suggestion
     # tips: all
   reverse_lookup: {}
   punctuator:
