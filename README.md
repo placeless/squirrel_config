@@ -14,6 +14,6 @@
 
 - 备份原配置
 - [最新鼠须管下载](https://dl.bintray.com/rime/squirrel/)
-- 替换 /Library/Input Methods/Squirrel/Contents/SharedSupport/opencc/TSCharacter.ocd 目录下的同名文件
+- 替换 /Library/Input Methods/Squirrel/Contents/SharedSupport/opencc/ 目录下的同名文件 TSCharacter.ocd
 - 复制其他文件到 ~/Library/Rime/
 - 鼠须管菜单，点击部署与同步
