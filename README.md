@@ -1,4 +1,4 @@
-![鼠须管](screenshot.png)
+![鼠须管](screenshot.png){:height="50%" width="50%"}
 
 ## 特点
 
