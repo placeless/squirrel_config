@@ -16,7 +16,7 @@ patch:
     - name: ascii_punct
       states: [ 。，, ．， ]
   engine/processors:
-    # - ascii_composer
+    - ascii_composer
     - recognizer
     - key_binder
     - speller
@@ -32,7 +32,7 @@ patch:
     - simplifier
     - uniquifier
     # - charset_filter
-    # - single_char_filter # 单字提前
+    - single_char_filter # 单字提前
   # emoji_suggestion:
   #   opencc_config: emoji.json
   #   option_name: emoji_suggestion
