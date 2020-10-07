@@ -1,10 +1,12 @@
+![鼠须管](screenshot.png)
+
 ## 特点
 
 - 小鹤双拼
 - 8105 个标准常用字
 - 无生僻字豆腐块
 - luna_pinyin 词库 + 按需外挂
-- Shift 临时英文模式
+- Shift 临时英文模式，比如 v ⇧ 2ex.com ⏎
 - 暗色主题
 - 默认关闭：emoji
 
