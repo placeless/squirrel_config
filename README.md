@@ -1,4 +1,4 @@
-![鼠须管](screenshot.png){:height="50%" width="50%"}
+<img alt="鼠须管" src="screenshot.png" width="50%" height="50%">
 
 ## 特点
 
