@@ -1,0 +1,62 @@
+patch:
+  # 通知栏显示方式以及 ascii_mode 应用，与外观无关
+  show_notifications_via_notification_center: true
+
+  # 以下软件默认英文模式
+  app_options: {}
+
+# 如果想要修改皮肤，直接更改 color_scheme 的值即可
+  style:
+    color_scheme: apathy
+
+  preset_color_schemes:
+    apathy:
+      author: "LIANG Hai"
+      border_height: 6
+      border_width: 4
+      candidate_list_layout: linear # stacked | linear
+      text_orientation: horizontal
+      # horizontal: true # deprecated
+      inline_preedit: true
+      candidate_format: "%c\u2005%@\u2005"
+      comment_text_color: 0x999999
+      corner_radius: 5
+      font_face: PingFangSC
+      font_point: 17
+      label_font_point: 1
+      back_color: 0xFFFFFF
+      text_color: 0x424242
+      label_color: 0xFFFFFF
+      hilited_candidate_back_color: 0xFFF0E4
+      hilited_candidate_text_color: 0xEE6E00
+      hilited_candidate_label_color: 0xFFF0E4
+      # alpha: 0.95
+      name: "冷漠／Apathy"
+    placeless:
+      name: "空地／placeless"
+      author: "placeless"
+      alpha: 0.95
+      candidate_list_layout: linear # stacked | linear
+      text_orientation: horizontal # vertical | horizontal
+      inline_preedit: true
+      # horizontal: true # deprecated
+      candidate_format: "%c\u2005%@"
+      corner_radius: 5
+      hilited_corner_radius: 0
+      border_width: 0 # borderless
+      # border_height: 6
+      # border_color_width: 0
+      # border_color: 0x717171
+      font_face: PingFangSC
+      font_point: 17
+      text_color: 0xeaeaea
+      back_color: 0x171717
+      label_font_point: 12
+      label_color: 0x888785
+      candidate_text_color: 0xeaeaea
+      hilited_text_color: 0xeaeaea
+      hilited_back_color: 0x171717
+      hilited_candidate_text_color: 0xeaeaea
+      hilited_candidate_back_color: 0x171717
+      hilited_candidate_label_color: 0x888785
+      comment_text_color: 0xdedddd

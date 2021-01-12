@@ -1,0 +1,5 @@
+patch:
+  schema_list:
+    - schema: placeless_flypy
+  switcher/hotkeys:
+    - "Control+grave"

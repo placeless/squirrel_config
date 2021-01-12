@@ -1,0 +1,101 @@
+patch:
+  # schema/dependencies: emoji
+  schema/dependencies: {}
+  schema/name: "小鹤双拼"
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    # - name: emoji_suggestion
+    #   states: [ "👌", "No" ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      reset: 1
+      states: [ 漢字, 汉字 ]
+    - name: ascii_punct
+      states: [ 。，, ．， ]
+  engine/processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  engine/translators:
+    - punct_translator
+    - script_translator
+  engine/filters:
+    # - simplifier@emoji_suggestion
+    - simplifier
+    - uniquifier
+    # - charset_filter
+    - single_char_filter # 单字提前
+  # emoji_suggestion:
+  #   opencc_config: emoji.json
+  #   option_name: emoji_suggestion
+    # tips: all
+  reverse_lookup: {}
+  punctuator:
+    import_preset: default
+    symbols:
+      "/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
+      "/bq": [😂️, 😅️, 🎉, 🐂, 😱️, 👌, 😇️, 🙃️, 🤔️, 💊️, 💯️, 👍️, 🙈️, 💩️, 😈️ ]
+      "/dn": [⌘, ⌥, ⇧, ⌃, ⎋, ⇪, , ⌫, ⌦, ↩︎, ⏎, ↑, ↓, ←, →, ↖, ↘, ⇟, ⇞]
+      "/fh": [ ©, ®, ℗, ℠, ™, ℡, ⓘ, ♂, ♀, ☉, ☊, ☋, ☌, ☍, ☐, ☑︎, ☒, ☜, ☝, ☞, ☟, ✎, ✄, ♲, ♻, ⚐, ⚑, ⚠]
+      "/xh": [ ＊, ×, ✱, ★, ☆, ✩, ✧, ❋, ❊, ❉, ❈, ❅, ✿, ✲]
+    half_shape:
+      "#": "#"
+      "`": "`"
+      "~": "~"
+      "@": "@"
+      "=": "="
+      "/": ["/", "÷", "、"]
+      "*": ["*", "×", "·", "・", "※", "＊", "❂"]
+      '\': ["、", '\']
+      "'": {pair: ["「", "」"]}
+      "\"": "\""
+      "[": "["
+      "]": "]"
+      # "[": ["[", "【"]
+      # "]": ["]", "】"]
+      "{": "{"
+      "}": "}"
+      # "{": ["{", "〖", "『"]
+      # "}": ["}", "〗", "』"]
+      _: ["——", "_"]
+      "|": "|"
+      "(": ["（", "("]
+      ")": ["）", ")"]
+      ":": ["：", ":"]
+      ";": ["；", ";"]
+      "?": ["？", "?"]
+      "!": ["！", "!"]
+      "$": ["¥", "$", "€", "£", "¢", "¤"]
+      "<": ["<", "《", ",", "〈", "«"]
+      ">": [">", "》", ".", "〉", "»"]
+  recognizer:
+    import_preset: default
+    patterns:
+      punct: "^/([a-z]+|[0-9]0?)$"
+      html: "^<[a-z]+>$"
+      camel: "[a-z]+[A-Z].*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]{1,11}[.:_-].*$"
+
+  ### 精简 simp
+  translator/dictionary: luna_pinyin
+  translator/preedit_format: {}
+  # translator/enable_correction: true
+
+  ### 双拼使用自定义词典 custom_phrase.txt
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+  "engine/translators/@5": table_translator@custom_phrase
+
