@@ -1,0 +1,29 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: placeless_punct
+version: "0.2"
+sort: by_weight
+...
+
+# 个人土方
+.	.	1
+,	,	1
+:	:	1
+/	/	1
+-	-	1
+_	_	1
+=	=	1
++	+	1
+0	0	1
+1	1	1
+2	2	1
+3	3	1
+4	4	1
+5	5	1
+6	6	1
+7	7	1
+8	8	1
+9	9	1

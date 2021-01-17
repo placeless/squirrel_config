@@ -38,7 +38,8 @@ engine:
     - script_translator
 
 speller:
-  alphabet: 'zyxwvutsrqponmlkjihgfedcba0987654321:./-=_+'
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba0987654321:,.!()/-=_+'
+  initials: 'zyxwvutsrqponmlkjihgfedcba0987654321'
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
