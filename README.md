@@ -1,5 +1,7 @@
 <img alt="鼠须管" src="2021/squirrel_config_2021.png" width="50%" height="50%">
 
+<img alt="鼠须管" src="2021/theme_pill.png" width="50%" height="50%">
+
 ## 特点
 
 - 小鹤双拼
