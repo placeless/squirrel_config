@@ -14,6 +14,26 @@ sort: by_weight
 ...
 
 # zh_simp 精简 -> 8105
+蚆	ba	1
+朳	ba	1
+胈	ba	1
+菝	ba	2
+鲅	ba	5
+魃	ba	15
+岜	ba	17
+笆	ba	23
+钯	ba	47
+粑	ba	49
+耙	ba	52
+跋	ba	88
+灞	ba	113
+叭	ba	131
+捌	ba	176
+靶	ba	186
+疤	ba	250
+芭	ba	284
+扒	ba	523
+坝	ba	701
 霸	ba	793
 罢	ba	1274
 拔	ba	1815
@@ -1935,17 +1955,17 @@ sort: by_weight
 耐	nai	2491
 奶	nai	2952
 乃	nai	3671
-萳		1
-婻		1
-蝻		8
-赧		16
-腩		44
-囡		169
-楠		720
-喃		1485
-南		7350
-难		15640
-男		16792
+萳	nan	1
+婻	nan	1
+蝻	nan	8
+赧	nan	16
+腩	nan	44
+囡	nan	169
+楠	nan	720
+喃	nan	1485
+南	nan	7350
+难	nan	15640
+男	nan	16792
 齉	nang	1
 攮	nang	7
 曩	nang	23
