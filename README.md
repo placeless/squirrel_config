@@ -24,5 +24,5 @@
 
 ## 注意
 
-- 本方案默认是空格上屏，<kbd>;</kbd> 一选，<kbd>'</kbd> 二选
+- 本方案默认是空格上屏，<kbd>;</kbd> 二选，<kbd>'</kbd> 一选
 - 更多详情，请参看[鼠须管配置 2021](https://placeless.net/blog/rime-squirrel-customization-2021)
